@@ -23,35 +23,23 @@ An organization needs a shared file system for application servers and scalable 
 
 ## 3. Architecture Diagram
 
-```mermaid
-flowchart TD
-    User["Staff / Test User"]
-
-    EC2A["EC2 Server 1"]
-    EC2B["EC2 Server 2"]
-
-    EFS[("Amazon EFS - Shared File System")]
-    S3[("Amazon S3 - Object Storage")]
-
-    IAM["IAM Instance Role"]
-    SG["Security Groups"]
-
-    User --> EC2A
-    User --> EC2B
-
-    EC2A <--> EFS
-    EC2B <--> EFS
-
-    EC2A -->|"Upload files"| S3
-
-    IAM -.->|"Authorizes S3 API access"| EC2A
-    IAM -.->|"Authorizes S3 API access"| EC2B
-
-    SG -.->|"Controls NFS access"| EFS
-    SG -.->|"Controls network access"| EC2A
-    SG -.->|"Controls network access"| EC2B
+```text
+                 Staff / Test User
+                         |
+                ---------------------
+                |                   |
+           EC2 Server 1        EC2 Server 2
+                |                   |
+                +---------+---------+
+                          |
+                     Amazon EFS
+                Shared File Storage
+                          |
+                   Selected Files
+                          |
+                      Amazon S3
+               Object Storage / Archive
 ```
-
 
 <br>
 
