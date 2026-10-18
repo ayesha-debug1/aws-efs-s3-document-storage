@@ -62,7 +62,14 @@ An organization needs a shared file system for application servers and scalable 
 
 <br>
 
-## 8. Security Design
+## 8. Lifecycle Management
+
+A lifecycle policy can transition eligible objects to another storage class or expire them according to configured rules.
+
+
+<br>
+
+## 9. Security Design
 
 - S3 Block Public Access remains enabled.
 - Encryption at rest is enabled for storage.
