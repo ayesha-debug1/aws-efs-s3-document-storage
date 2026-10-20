@@ -1,15 +1,17 @@
 ## 1. Implementation Plan
 
 1. Create a private S3 bucket with encryption enabled.
-2. Upload and download sample documents.
+2. Upload sample documents.
 3. Configure an EFS file system and mount targets.
-4. Launch Linux EC2 instances in the same VPC.
-5. Mount EFS on both instances.
+4. Launch two Linux EC2 instances in the same VPC.
+5. Install EFS utility and Mount EFS on both instances to establish connection with EFS.
 6. Verify that files created on one instance are accessible from the other.
-7. Configure an EC2 IAM role for restricted S3 access.
-8. Copy a sample file from EFS to S3.
-9. Test security settings and document the results.
-10. Clean up resources when testing is complete.
+7. Create a policy with file upload and creation access on S3.
+8. Create IAM role and attach the policy.
+9. Attach the created IAM role to both the instances.
+10. Copy the present file on both instances to S3
+11. Check S3 and the files should have been copied successfully
+
 
 <br>
 
