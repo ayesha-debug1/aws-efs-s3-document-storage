@@ -1,4 +1,4 @@
-## 6. Implementation Plan
+## 1. Implementation Plan
 
 1. Create a private S3 bucket with encryption enabled.
 2. Upload and download sample documents.
@@ -11,7 +11,9 @@
 9. Test security settings and document the results.
 10. Clean up resources when testing is complete.
 
+<br>
 
+## 2. TEST REULTS 
 
 | Test | Description | Result |
 |------|-------------|--------|
@@ -27,5 +29,9 @@
 | 10 | Copied files successfully accessible in S3 | [ec2-s3-copyresult.png](screenshots/ec2-s3-copyresult.png) |
 
 
+<br>
+<br>
 
 CONCLUSION
+<br>
+This project demonstrates how Amazon EFS provides shared file storage for EC2 instances, while Amazon S3 stores copies of files for durable, scalable object storage. It also showcases basic AWS CLI operations and how files can be transferred from EFS to S3, forming a foundation for secure and cost-effective cloud storage solutions.
