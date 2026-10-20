@@ -15,16 +15,16 @@
 
 | Test | Description | Result |
 |------|-------------|--------|
-| 1 | S3 upload | |
-| 2 | S3 lifecycle setup | |
-| 3 | EFS mount | |
-| 4 | Establish connection b/w EC2 (server one) and EFS | |
-| 5 | File sharing test result on server two | |
-| 6 | S3 and EC2 (server one) connection via IAM role | |
-| 7 | S3 and EC2 (server two) connection via IAM role | |
-| 8 | File copied from server one to S3 | |
-| 9 | File copied from server two to S3 | |
-| 10 | Copied files successfully accessible in S3 | |
+| 1 | S3 object creation and file upload | [s3-object-creation.png](screenshots/s3-object-creation.png) |
+| 2 | S3 lifecycle setup | [s3-Lifecycle.png](screenshots/s3-Lifecycle.png) |
+| 3 | EFS mount target setup | [efs-mount-target.png](screenshots/efs-mount-target.png) |
+| 4 | Establish connection b/w EC2 (server one) and EFS | [EFS-testing-EC2-1.png](screenshots/EFS-testing-EC2-1.png) |
+| 5 | File sharing test result on server two | [EFS-testing-EC2-2.png](screenshots/EFS-testing-EC2-2.png) |
+| 6 | S3 and EC2 (server one) connection via IAM role | [IAM-role-ec2-1.png](screenshots/IAM-role-ec2-1.png) |
+| 7 | S3 and EC2 (server two) connection via IAM role | [IAM-role-ec2-2.png](screenshots/IAM-role-ec2-2.png) |
+| 8 | File copied from server one to S3 | [EC2-1-to-s3-copy.png](screenshots/EC2-1-to-s3-copy.png) |
+| 9 | File copied from server two to S3 | [EC2-2-to-s3-copy.png](screenshots/EC2-2-to-s3-copy.png) |
+| 10 | Copied files successfully accessible in S3 | [ec2-s3-copyresult.png](screenshots/ec2-s3-copyresult.png) |
 
 
 
