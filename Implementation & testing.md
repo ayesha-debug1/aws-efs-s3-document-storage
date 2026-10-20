@@ -18,8 +18,8 @@
 | 1 | S3 object creation and file upload | [s3-object-creation.png](screenshots/s3-object-creation.png) |
 | 2 | S3 lifecycle setup | [s3-Lifecycle.png](screenshots/s3-Lifecycle.png) |
 | 3 | EFS mount target setup | [efs-mount-target.png](screenshots/efs-mount-target.png) |
-| 4 | Establish connection b/w EC2 (server one) and EFS | [EFS-testing-EC2-1.png](screenshots/EFS-testing-EC2-1.png) |
-| 5 | File sharing test result on server two | [EFS-testing-EC2-2.png](screenshots/EFS-testing-EC2-2.png) |
+| 4 | Establish connection b/w EC2 (server one) and EFS and create files for sharing | [EFS-testing-EC2-1.png](screenshots/EFS-testing-EC2-1.png) |
+| 5 | Establish connection b/w EC2 (server two) and EFS and retrieve files from server one | [EFS-testing-EC2-2.png](screenshots/EFS-testing-EC2-2.png) |
 | 6 | S3 and EC2 (server one) connection via IAM role | [IAM-role-ec2-1.png](screenshots/IAM-role-ec2-1.png) |
 | 7 | S3 and EC2 (server two) connection via IAM role | [IAM-role-ec2-2.png](screenshots/IAM-role-ec2-2.png) |
 | 8 | File copied from server one to S3 | [EC2-1-to-s3-copy.png](screenshots/EC2-1-to-s3-copy.png) |
