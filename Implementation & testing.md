@@ -17,7 +17,7 @@
 
 ## 2. TEST REULTS 
 
-| Test | Description | Result |
+| Step | Description | Result |
 |------|-------------|--------|
 | 1 | S3 object creation and file upload | [s3-object-creation.png](screenshots/s3-object-creation.png) |
 | 2 | S3 lifecycle setup | [s3-Lifecycle.png](screenshots/s3-Lifecycle.png) |
