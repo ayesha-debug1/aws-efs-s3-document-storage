@@ -21,7 +21,7 @@ An organization needs a shared file system for application servers and scalable 
 
 <br>
 
-## 3. Architecture Diagram
+## Architecture Diagram
 
 ```text
                  Staff / Test User
@@ -53,7 +53,7 @@ An organization needs a shared file system for application servers and scalable 
 
 <br>
 
-## 7. Network Design
+## Network Design
 
 - EC2 instances and EFS mount targets are placed in the same VPC.
 - EFS security-group inbound access permits NFS TCP port 2049 from the EC2 security group.
@@ -62,14 +62,14 @@ An organization needs a shared file system for application servers and scalable 
 
 <br>
 
-## 8. Lifecycle Management
+## Lifecycle Management
 
 A lifecycle policy can transition eligible objects to another storage class or expire them according to configured rules.
 
 
 <br>
 
-## 9. Security Design
+## Security Design
 
 - S3 Block Public Access remains enabled.
 - Encryption at rest is enabled for storage.
