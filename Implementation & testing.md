@@ -15,7 +15,7 @@
 
 <br>
 
-## 2. TEST REULTS 
+## 2. TESTING AND RESULTS 
 
 | Step | Description | Result |
 |------|-------------|--------|
